@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Giuliana Fragapane</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body class="dark">
+    <!--Barra de navegación-->
+    <nav class="nav">
+      <div class="brand">Giuliana Fragapane</div>
+      <ul class="nav-links" aria-label="Navegación principal">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Alternar tema">
+          <i id="themeIcon" class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+      <button class="hamburger" id="hamburgerBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <div id="mobileOverlay"></div>
+    <main>
+      <!--Inicio-->
+      <section id="inicio" class="hero">
+        <div class="hero-left">
+          <div class="photo-wrap" aria-hidden="true">
+            <div class="photo-circle"></div>
+            <img src="src/images/profile.png" alt="Foto Giuliana Fragapane" class="profile-img">
+          </div>
+        </div>
+        <div class="hero-right">
+          <h2 class="intro">Hola👋, soy</h2>
+          <h1 class="highlight">Giuliana Fragapane</h1>
+          <p><strong>Soy <span class="dynamic-adjective">proactiva</span></strong></p>
+          <p class="personal-description">Desarrolladora Junior, apasionada por el backend<br> y en constante aprendizaje.</p>
+          <div class="buttons">
+            <a class="btn" href="https://docs.google.com/document/d/1G6xm5pvkOjWJazUqVRTK2G3iOLPxOfLm6XqC76oqUYA/edit?tab=t.0" target="_blank">
+              <i class="fa-solid fa-download"></i> Descargar CV
+            </a>
+            <a href="https://www.linkedin.com/in/giuliana-fragapane-pravatta-372803223/" target="_blank" class="icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/giulifragapane" target="_blank" class="icon-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/542612113041" target="_blank" class="icon-btn"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="bubbles" aria-hidden="true">
+          <img src="src/images/bubble1.png" class="bubble b1" alt="burbuja decorativa" />
+          <img src="src/images/bubble2.png" class="bubble b2" alt="burbuja decorativa" />
+          <img src="src/images/bubble3.png" class="bubble b3" alt="burbuja decorativa" />
+        </div>
+      </section>
+      <!--Sección Sobre mi-->
+      <section id="sobre-mi" class="card about-section">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-container">
+          <div class="about-left">
+            <h3 class="years">3+</h3>
+            <p class="exp-text">AÑOS DE<br>EXPERIENCIA<br>LABORAL</p>
+          </div>
+          <div class="about-center">
+            <p class="about-me">Me motiva desarrollar soluciones que aporten valor real y mejoren la experiencia de las personas.
+              Siempre busco aprender y aplicar nuevas tecnologías para crecer como profesional.
+            </p>
+            <p class="about-me">
+              Durante 3 años he desempeñado el rol de soporte a clientes en la empresa donde actualmente trabajo, 
+              brindando asistencia técnica y solucionando incidencias, así como implementando clientes desde cero 
+              y asegurando su correcta integración y funcionamiento.
+            </p>
+          </div>
+          <div class="about-right">
+            <img src="src/images/sobremi.png" alt="Soporte Limited Edition - Giuliana" class="about-image" />
+          </div>
+        </div>
+        <div class="scroll-down">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+      <!--Sección habilidades-->
+      <section id="habilidades" class="card skills-section">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3 class="skill-title">Frontend</h3>
+            <div class="skill-icons">
+              <img src="src/images/icons/html.png" alt="HTML" />
+              <img src="src/images/icons/css.png" alt="CSS" />
+              <img src="src/images/icons/js.png" alt="JavaScript" />
+              <img src="src/images/icons/ts.png" alt="TypeScript" />
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3 class="skill-title">Backend</h3>
+            <div class="skill-icons">
+              <img src="src/images/icons/java.png" alt="Java" />
+              <img src="src/images/icons/php.png" alt="PHP" />
+              <img src="src/images/icons/golang.png" alt="Go" />
+              <img src="src/images/icons/spring.png" alt="Spring Boot" />
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3 class="skill-title">Base de Datos</h3>
+            <div class="skill-icons">
+              <img src="src/images/icons/mysql.png" alt="MySQL" />
+              <img src="src/images/icons/hibernate.png" alt="Hibernate" />
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3 class="skill-title">Herramientas</h3>
+            <div class="skill-icons">
+              <img src="src/images/icons/zapier.png" alt="Zapier" />
+              <img src="src/images/icons/jira.png" alt="Jira" />
+              <img src="src/images/icons/github.png" alt="GitHub" />
+              <img src="src/images/icons/slack.png" alt="Slack" />
+              <img src="src/images/icons/notion.png" alt="Notion" />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-down">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+      <!--Sección Experiencia-->
+      <section id="experiencia" class="card experience-section">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">2022 – 2023 | Soporte Técnico</h3>
+              <p>
+                Desempeñé el rol de Soporte, atendiendo las necesidades diarias de los clientes,
+                resolviendo incidencias y gestionando urgencias con rapidez y eficiencia.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">2024 | Líder de Soporte</h3>
+              <p>
+                Ascendí a Líder de Soporte, coordinando al equipo y asumiendo la responsabilidad
+                de relevar nuevos clientes. Logré incorporar con éxito varios clientes en producción.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">2025 – Actualidad | Desarrollo</h3>
+              <p>Actualmente me encuentro dando mis primeros pasos en el área de Desarrollo, aplicando mis
+                conocimientos técnicos para contribuir en la construcción de nuevas soluciones y funcionalidades.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="experience-gallery">
+          <div class="gallery-item">
+            <img src="src/images/exp/exp1.jpeg" alt="Soporte en sala">
+            <span class="img-info">Capacitaciones y soporte en sala con clientes y usuarios.</span>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/exp/exp2.png" alt="Planillas de trabajo">
+            <span class="img-info">Planillas operativas automatizadas con una base de datos, para seguimiento de tickets en Jira; disponibles para los clientes.</span>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/exp/exp3.png" alt="Dashboard técnico">
+            <span class="img-info">Dashboard técnico para seguimiento y visualización de estados de los sistemas, con acceso organizado a los mismos.</span>
+          </div>
+        </div>
+      </section>
+      <!--Sección contacto-->
+      <section id="contacto" class="card contacto-section">
+        <h2 class="contacto-title">Contacto</h2>
+        <p class="contacto-sub">Si quieres ponerte en contacto conmigo,<br>puedes hacerlo a través de estos medios:
+        </p>
+        <div class="contacto-icons">
+          <a href="https://www.linkedin.com/in/giuliana-fragapane-pravatta-372803223/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/542612113041" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="mailto:giulianafragapanepravatta@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <form id="contactForm" class="contact-mini-form">
+          <h3 class="form-title">O si lo prefieres, déjame tu mensaje:</h3>
+          <input type="text" name="name" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu email" required>
+          <textarea name="message" rows="4" placeholder="Tu mensaje..." required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div class="contact-bubbles">
+          <img src="src/images/bubble1.png" class="cb1" alt="burbuja decorativa" />
+          <img src="src/images/bubble2.png" class="cb2" alt="burbuja decorativa" />
+          <img src="src/images/bubble3.png" class="cb3" alt="burbuja decorativa" />
+          <img src="src/images/bubble1.png" class="cb4" alt="burbuja decorativa" />
+          <img src="src/images/bubble2.png" class="cb5" alt="burbuja decorativa" />
+          <img src="src/images/bubble3.png" class="cb6" alt="burbuja decorativa" />
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>© 2025 | Sitio creado por Giuliana Fragapane</div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
